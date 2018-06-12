@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Galano Grotesque";
+  src: url("../fonts/galano-grotesque-demo-bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "GT Walsheim";
+  src: url("../fonts/GT-Walsheim-Pro-Trial-Thin.otf") format("opentype");
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: "GT Walsheim";
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-position: bottom right;
+}
+
+/* Menu */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 3vh 10vw;
+}
+ul {
+  display: inherit;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li {
+  margin: 0 1.5vw;
+  color: #757e83;
+  font-size: 15px;
+  font-weight: bold;
+}
+li:hover {
+  color: #464b4f;
+}
+li:nth-child(1) {
+  margin-left: 0;
+}
+li:nth-last-child(1) {
+  margin-right: 0;
+}
+li a {
+  text-decoration: none;
+  color: inherit;
+}
+li a[role=button] {
+  padding: 8px 16px;
+  background-color: #c72b2e;
+  color: #fff;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+li a[role=button]:hover {
+  background-color: #e24d50
+}
+/* Main */
+
+h1, div {
+  margin-left: 10vw;
+}
+h1 {
+  margin-bottom: 5vh;
+  font-family: 'Galano Grotesque', sans-serif;
+  color: #fff;
+  font-size: 6em;
+  line-height: 0.85em;
+  font-weight: 100;
+}
+div {
+  width: 350px;
+}
+div p {
+  color: #757e83;
+  margin-bottom: 40px;
+}
+div a[role=button] {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #c72b2e;
+  color: #fff;
+  font-size: 12px;
+  padding: 12px 30px;
+  border-radius: 24px;
+}
+div a[role=button]:nth-last-child(1) {
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #000;
+  margin-left: 1vw;
+}
+
+div a[role=button]:hover {
+  background-color: #e24d50
+}
+
+div a[role=button]:nth-last-child(1):hover {
+  background-color: #f7f4f4;
+}
